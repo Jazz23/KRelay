@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib_K_Relay.Networking.Packets.Client
 {
@@ -24,7 +20,8 @@ namespace Lib_K_Relay.Networking.Packets.Client
         public string PlayPlatform;
         public string PlatformToken;
         public string UserToken;
-        
+        public string ClientToken;
+
         public override PacketType Type
         { get { return PacketType.HELLO; } }
 
@@ -46,6 +43,7 @@ namespace Lib_K_Relay.Networking.Packets.Client
             PlayPlatform = r.ReadString();
             PlatformToken = r.ReadString();
             UserToken = r.ReadString();
+            ClientToken = r.ReadString();
         }
 
         public override void Write(PacketWriter w)
@@ -67,6 +65,7 @@ namespace Lib_K_Relay.Networking.Packets.Client
             w.Write(PlayPlatform);
             w.Write(PlatformToken);
             w.Write(UserToken);
+            w.Write(ClientToken);
         }
     }
 }

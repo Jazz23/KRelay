@@ -1,34 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Lib_K_Relay.Networking.Packets.DataObjects;
 
 namespace Lib_K_Relay.Networking.Packets.Server
 {
-    public class QuestFetchResponsePacket : Packet
+    public class QuestFetchResponsePacket : Packet // BROKEN AS OF X32.3.1
     {
-        public int Tier;
-        public string Goal;
-        public string Description;
-        public string Image;
+        public QuestData[] Quests = new QuestData[0];
+        public int NextRefreshPrice = -1;
+
         public override PacketType Type
         { get { return PacketType.QUESTFETCHRESPONSE; } }
 
         public override void Read(PacketReader r)
         {
-            Tier = r.ReadInt32();
-            Goal = r.ReadString();
-            Description = r.ReadString();
-            Image = r.ReadString();
+            Quests = new QuestData[r.ReadInt16()];
+            for (int i = 0; i < Quests.Length; i++)
+                Quests[i] = (QuestData)new QuestData().Read(r);
+            NextRefreshPrice = r.ReadInt16();
         }
 
         public override void Write(PacketWriter w)
         {
-            w.Write(Tier);
-            w.Write(Goal);
-            w.Write(Description);
-            w.Write(Image);
+            w.Write((short)Quests.Length);
+            for (int i = 0; i < Quests.Length; i++)
+                Quests[i].Write(w);
+            w.Write((short)NextRefreshPrice);
         }
     }
 }

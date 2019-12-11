@@ -12,8 +12,8 @@ namespace Lib_K_Relay.Networking
 {
     public class Client
     {
-        private static string Key0 = "311f80691451c71d09a13a2a6e";
-        private static string Key1 = "72c5583cafb6818995cdd74b80";
+        private static string Key0 = "6a39570cc9de4ec71d64821894";
+        private static string Key1 = "c79332b197f92ba85ed281a023";
         public int LastUpdate = 0;
         public int PreviousTime = 0;
         private object _serverLock = new object();
@@ -36,7 +36,10 @@ namespace Lib_K_Relay.Networking
         /// </summary>
         public int Time
         {
-            get { return PreviousTime + (Environment.TickCount - LastUpdate); }
+            get
+            {
+                return PreviousTime + (Environment.TickCount - LastUpdate);
+            }
         }
 
         /// <summary>
@@ -44,7 +47,10 @@ namespace Lib_K_Relay.Networking
         /// </summary>
         public int ObjectId
         {
-            get { return PlayerData.OwnerObjectId; }
+            get
+            {
+                return PlayerData.OwnerObjectId;
+            }
         }
 
         /// <summary>
@@ -52,7 +58,8 @@ namespace Lib_K_Relay.Networking
         /// </summary>
         public PlayerData PlayerData
         {
-            get; set;
+            get;
+            set;
         }
 
         /// <summary>
@@ -60,7 +67,8 @@ namespace Lib_K_Relay.Networking
         /// </summary>
         public State State
         {
-            get; set;
+            get;
+            set;
         }
 
         /// <summary>
@@ -68,7 +76,10 @@ namespace Lib_K_Relay.Networking
         /// </summary>
         public bool Connected
         {
-            get { return !_closed; }
+            get
+            {
+                return !_closed;
+            }
         }
 
         public Client(Proxy proxy, TcpClient client)
@@ -148,11 +159,12 @@ namespace Lib_K_Relay.Networking
             Send(packet, false);
         }
 
-        private void Send(Packet packet, bool client)
+        private void Send(Packet packet, bool client, byte[] bytes = null)
         {
             lock (client ? _clientLock : _serverLock)
             {
-                bool success = PluginUtils.ProtectedInvoke(() =>
+                bool success = false;
+                try
                 {
                     MemoryStream ms = new MemoryStream();
                     using (PacketWriter w = new PacketWriter(ms))
@@ -162,7 +174,7 @@ namespace Lib_K_Relay.Networking
                         packet.Write(w);
                     }
 
-                    byte[] data = ms.ToArray();
+                    byte[] data = bytes != null ? bytes : ms.ToArray();
                     PacketWriter.BlockCopyInt32(data, data.Length);
 
                     if (client)
@@ -175,9 +187,14 @@ namespace Lib_K_Relay.Networking
                         _serverSendState.Cipher(data);
                         _serverStream.Write(data, 0, data.Length);
                     }
-                }, "PacketSend (packet = " + packet?.Type + ")", typeof(IOException));
+                    success = true;
+                }
+                catch { }
 
-                if (!success) Dispose();
+                if (!success)
+                {
+                    Dispose();
+                }
             }
         }
 
@@ -185,8 +202,12 @@ namespace Lib_K_Relay.Networking
         {
             PacketBuffer buffer = client ? _clientBuffer : _serverBuffer;
             NetworkStream stream = client ? _clientStream : _serverStream;
-            stream.BeginRead(buffer.Bytes, offset, amount, RemoteRead,
-                new Tuple<NetworkStream, PacketBuffer>(stream, buffer));
+            try
+            {
+                stream.BeginRead(buffer.Bytes, offset, amount, RemoteRead,
+                    new Tuple<NetworkStream, PacketBuffer>(stream, buffer));
+            }
+            catch { }
         }
 
         private void RemoteRead(IAsyncResult ar)
@@ -199,8 +220,13 @@ namespace Lib_K_Relay.Networking
             bool success = PluginUtils.ProtectedInvoke(() =>
             {
                 if (!stream.CanRead) return;
+                int read;
+                try
+                {
+                    read = stream.EndRead(ar);
+                }
+                catch { return; }
 
-                int read = stream.EndRead(ar);
                 buffer.Advance(read);
 
                 if (read == 0)
@@ -221,22 +247,34 @@ namespace Lib_K_Relay.Networking
                 else
                 {   // We have the full packet
                     cipher.Cipher(buffer.Bytes);
+                    byte[] temp = (byte[])buffer.Bytes.Clone();
+                    if (_proxy.IsHooked((PacketType)buffer.Bytes[4])) temp = null; //If a packet isn't hooked then just send the raw data (no packet processing). Helps with broken/missing packet types.
+
                     Packet packet = Packet.Create(buffer.Bytes);
 
                     if (isClient)
+                    {
                         _proxy.FireClientPacket(this, packet);
+                    }
                     else
+                    {
                         _proxy.FireServerPacket(this, packet);
+                    }
 
                     if (packet.Send)
-                        Send(packet, !isClient);
+                    {
+                        Send(packet, !isClient, temp);
+                    }
 
                     buffer.Reset();
                     BeginRead(0, 4, isClient);
                 }
             }, "RemoteRead (isClient = " + isClient + ")", typeof(IOException));
 
-            if (!success) Dispose();
+            if (!success)
+            {
+                Dispose();
+            }
         }
     }
 }

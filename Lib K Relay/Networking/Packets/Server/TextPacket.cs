@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lib_K_Relay.Networking.Packets.Server
+﻿namespace Lib_K_Relay.Networking.Packets.Server
 {
     public class TextPacket : Packet
     {
@@ -15,6 +9,8 @@ namespace Lib_K_Relay.Networking.Packets.Server
         public string Recipient;
         public string Text;
         public string CleanText;
+        public bool isSupporter;
+        public int starBg;
 
         public override PacketType Type
         { get { return PacketType.TEXT; } }
@@ -28,6 +24,8 @@ namespace Lib_K_Relay.Networking.Packets.Server
             Recipient = r.ReadString();
             Text = r.ReadString();
             CleanText = r.ReadString();
+            isSupporter = r.ReadBoolean();
+            starBg = r.ReadInt32();
         }
 
         public override void Write(PacketWriter w)
@@ -39,6 +37,8 @@ namespace Lib_K_Relay.Networking.Packets.Server
             w.Write(Recipient);
             w.Write(Text);
             w.Write(CleanText);
+            w.Write(isSupporter);
+            w.Write(starBg);
         }
     }
 }

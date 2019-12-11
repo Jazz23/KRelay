@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib_K_Relay.Networking.Packets.Server
 {
@@ -12,6 +8,7 @@ namespace Lib_K_Relay.Networking.Packets.Server
         public int Height;
         public string Name;
         public string DisplayName;
+        public string RealmName;
         public int Difficulty;
         public uint Fp;
         public int Background;
@@ -29,6 +26,7 @@ namespace Lib_K_Relay.Networking.Packets.Server
             Height = r.ReadInt32();
             Name = r.ReadString();
             DisplayName = r.ReadString();
+            RealmName = r.ReadString();
             Fp = r.ReadUInt32();
             Background = r.ReadInt32();
             Difficulty = r.ReadInt32();
@@ -50,6 +48,7 @@ namespace Lib_K_Relay.Networking.Packets.Server
             w.Write(Height);
             w.Write(Name);
             w.Write(DisplayName);
+            w.Write(RealmName);
             w.Write(Fp);
             w.Write(Background);
             w.Write(Difficulty);

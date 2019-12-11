@@ -1,0 +1,11 @@
+stages: 
+  - build-dotnet
+build-dotnet:
+  stage: build-dotnet
+  image: mono:latest
+  script:
+    - nuget restore K_Relay.sln
+    - msbuild K_Relay.sln /property:Configuration=Release
+  artifacts:
+    paths:
+      - K_Relay/bin/Release

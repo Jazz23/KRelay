@@ -1,9 +1,5 @@
 ﻿using Lib_K_Relay.Utilities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib_K_Relay.Networking.Packets.Server
 {
@@ -15,6 +11,7 @@ namespace Lib_K_Relay.Networking.Packets.Server
         public bool Killed;
         public byte BulletId;
         public int ObjectId;
+        public bool armorPierce;
 
         public override PacketType Type
         { get { return PacketType.DAMAGE; } }
@@ -28,6 +25,7 @@ namespace Lib_K_Relay.Networking.Packets.Server
                 Effects |= (ConditionEffects)(1 << r.ReadByte());
             Damage = r.ReadUInt16();
             Killed = r.ReadBoolean();
+            armorPierce = r.ReadBoolean();
             BulletId = r.ReadByte();
             ObjectId = r.ReadInt32();
         }
@@ -43,6 +41,7 @@ namespace Lib_K_Relay.Networking.Packets.Server
             foreach (byte i in eff) w.Write(i);
             w.Write(Damage);
             w.Write(Killed);
+            w.Write(armorPierce);
             w.Write(BulletId);
             w.Write(ObjectId);
         }

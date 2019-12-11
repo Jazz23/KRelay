@@ -1,4 +1,5 @@
-﻿using Lib_K_Relay.Networking;
+﻿using Lib_K_Relay.GameData.DataStructures;
+using Lib_K_Relay.Networking;
 using Lib_K_Relay.Networking.Packets;
 using Lib_K_Relay.Networking.Packets.Client;
 using Lib_K_Relay.Utilities;
@@ -13,22 +14,42 @@ using System.Text;
 namespace Lib_K_Relay
 {
     public delegate void ListenHandler(Proxy proxy);
+
     public delegate void ConnectionHandler(Client client);
+
+    /// <summary>
+    /// Fires when the update packet for the client is sent.
+    /// </summary>
+    /// <param name="client"></param>
+    public delegate void Football(Client client);
+
     public delegate void PacketHandler(Client client, Packet packet);
+
     public delegate void GenericPacketHandler<T>(Client client, T packet) where T : Packet;
+
     public delegate void CommandHandler(Client client, string command, string[] args);
-	public delegate void StealthStateHandler(bool enabled);
+
+    public delegate void StealthStateHandler(bool enabled);
 
     public class Proxy
     {
         public event ListenHandler ProxyListenStarted;
+
         public event ListenHandler ProxyListenStopped;
+
         public event ConnectionHandler ClientBeginConnect;
+
         public event ConnectionHandler ClientConnected;
+
+        public event Football OnTouchDown;
+
         public event ConnectionHandler ClientDisconnected;
+
         public event PacketHandler ServerPacketRecieved;
+
         public event PacketHandler ClientPacketRecieved;
-		public event StealthStateHandler StealthStateChanged;
+
+        public event StealthStateHandler StealthStateChanged;
 
         public static string DefaultServer = "54.241.208.233"; // USWest
 
@@ -53,7 +74,7 @@ namespace Lib_K_Relay
             HookCommand("stealth", (proxy, cmd, args) =>
             {
                 bool newState = !StealthConfig.Default.StealthEnabled;
-
+                
                 StealthConfig.Default.StealthEnabled = newState;
                 StealthConfig.Default.Save();
 
@@ -73,11 +94,14 @@ namespace Lib_K_Relay
             {
                 _localListener = new TcpListener(IPAddress.Parse("127.0.0.1"), 2050);
                 _localListener.Start();
-                _localListener.BeginAcceptTcpClient(LocalConnect, null);
+                _localListener.BeginAcceptTcpClient(new AsyncCallback(LocalConnect), null);
                 PluginUtils.Log("Listener", "Local listener started.");
             }, "ClientListenerStart");
 
-            if (!success) return;
+            if (!success)
+            {
+                return;
+            }
 
             PluginUtils.ProtectedInvoke(() =>
             {
@@ -91,7 +115,10 @@ namespace Lib_K_Relay
         /// </summary>
         public void Stop()
         {
-            if (_localListener == null) return;
+            if (_localListener == null)
+            {
+                return;
+            }
 
             PluginUtils.Log("Listener", "Stopping local listener...");
             _localListener.Stop();
@@ -148,6 +175,7 @@ namespace Lib_K_Relay
         }
 
         #region Hook Calls
+
         /// <summary>
         /// Registers a callback for the specified packet type.
         /// </summary>
@@ -188,13 +216,15 @@ namespace Lib_K_Relay
             if (_commandHooks.ContainsKey(callback))
                 _commandHooks[callback].Add(command);
             else
-                _commandHooks.Add(callback, new List<string>() { command[0] == '/' 
-                    ? new string(command.Skip(1).ToArray()).ToLower() 
-                    : command.ToLower() } );
+                _commandHooks.Add(callback, new List<string>() { command[0] == '/'
+                    ? new string(command.Skip(1).ToArray()).ToLower()
+                    : command.ToLower() });
         }
-        #endregion
+
+        #endregion Hook Calls
 
         #region Event Calls
+
         /// <summary>
         /// Fires the ClientConnected event.
         /// </summary>
@@ -232,12 +262,20 @@ namespace Lib_K_Relay
                 if (ServerPacketRecieved != null) ServerPacketRecieved(client, packet);
 
                 // Fire specific hook callbacks if applicable
-                foreach (var pair in _packetHooks)
-                    if (pair.Value.Contains(packet.Type)) pair.Key(client, packet);
+                try {
+                    foreach (var pair in _packetHooks)
+                        if (pair.Value.Contains(packet.Type)) pair.Key(client, packet);
+                }
+                catch { }
+                
 
-                foreach (var pair in _genericPacketHooks)
-                    if (pair.Value == packet.GetType())
-                        (pair.Key as Delegate).Method.Invoke((pair.Key as Delegate).Target, new object[2] { client, Convert.ChangeType(packet, pair.Value) });
+                try
+                {
+                    foreach (var pair in _genericPacketHooks)
+                        if (pair.Value == packet.GetType())
+                            (pair.Key as Delegate).Method?.Invoke((pair.Key as Delegate).Target, new object[2] { client, Convert.ChangeType(packet, pair.Value) });
+                }
+                catch { }
             }, "ServerPacket");
         }
 
@@ -278,12 +316,33 @@ namespace Lib_K_Relay
                 // Fire specific hook callbacks if applicable
                 foreach (var pair in _packetHooks)
                     if (pair.Value.Contains(packet.Type)) pair.Key(client, packet);
-
-                foreach (var pair in _genericPacketHooks)
-                    if (pair.Value == packet.GetType()) (pair.Key as Delegate).Method.Invoke((pair.Key as Delegate).Target, new object[2] { client, Convert.ChangeType(packet, pair.Value) });
+                try {
+                    foreach (var pair in _genericPacketHooks)
+                        if (pair.Value == packet.GetType()) (pair.Key as Delegate).Method.Invoke((pair.Key as Delegate).Target, new object[2] { client, Convert.ChangeType(packet, pair.Value) });
+                } catch { }
             }, "ClientPacket");
         }
 
-        #endregion
+        public void FireOnTouchDown(Client client)
+        {
+            OnTouchDown?.Invoke(client);
+        }
+
+        public bool IsHooked(PacketType packet)
+        {
+            Type type;
+            try
+            {
+                PacketStructure st = GameData.GameData.Packets.ByID((byte)packet);
+                PacketType packetType = st.PacketType;
+                type = st.Type;
+            }
+            catch { return false; }
+
+            foreach (var pair in _packetHooks) if (pair.Value.Contains(packet)) return true;
+            foreach (var pair in _genericPacketHooks) if (pair.Value == type) return true;
+            return false;
+        }
+        #endregion Event Calls
     }
 }

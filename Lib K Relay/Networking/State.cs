@@ -1,9 +1,8 @@
-﻿using Lib_K_Relay.Networking.Packets.Server;
+﻿using Lib_K_Relay.Networking.Packets.Client;
+using Lib_K_Relay.Networking.Packets.DataObjects;
+using Lib_K_Relay.Networking.Packets.Server;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib_K_Relay.Networking
 {
@@ -19,6 +18,9 @@ namespace Lib_K_Relay.Networking
 
         public ReconnectPacket LastRealm = null;
         public ReconnectPacket LastDungeon = null;
+        public HelloPacket LastHello = null;
+        public ReconnectPacket LastReconnect = null;
+        public List<Entity> RenderedEntities = new List<Entity>();
 
         public Dictionary<string, dynamic> States;
 
@@ -50,7 +52,10 @@ namespace Lib_K_Relay.Networking
                 States.TryGetValue(stateName, out value);
                 return value;
             }
-            set { States[stateName] = value; }
+            set
+            {
+                States[stateName] = value;
+            }
         }
     }
 }

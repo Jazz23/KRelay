@@ -4,8 +4,6 @@ using Lib_K_Relay.Networking.Packets.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib_K_Relay.Networking
 {
@@ -22,6 +20,8 @@ namespace Lib_K_Relay.Networking
             proxy.HookPacket<NewTickPacket>(OnNewTick);
             proxy.HookPacket<PlayerShootPacket>(OnPlayerShoot);
             proxy.HookPacket<MovePacket>(OnMove);
+
+            proxy.ClientDisconnected += c => c.State.RenderedEntities.Clear();
         }
 
         private void OnMove(Client client, MovePacket packet)
@@ -39,10 +39,26 @@ namespace Lib_K_Relay.Networking
                 Y = packet.Position.Y - 0.3f * (float)Math.Sin(packet.Angle)
             };
         }
-
+        //int obect = 0;
         private void OnNewTick(Client client, NewTickPacket packet)
         {
             client.PlayerData.Parse(packet);
+
+            foreach (Status status in packet.Statuses)
+            {
+                Entity ent = client.State.RenderedEntities.FirstOrDefault(x => x.Status.ObjectId == status.ObjectId);
+                if (ent == null) continue;
+                ent.Status.Position = status.Position;
+                foreach (StatData stat in status.Data)
+                {
+                    StatData oldStat = ent.Status.Data.FirstOrDefault(x => x.Id == stat.Id);
+                    if (oldStat != null)
+                    {
+                        oldStat.IntValue = stat.IntValue;
+                        oldStat.StringValue = stat.StringValue;
+                    }
+                }
+            }
         }
 
         private void OnMapInfo(Client client, MapInfoPacket packet)
@@ -58,25 +74,56 @@ namespace Lib_K_Relay.Networking
         private void OnUpdate(Client client, UpdatePacket packet)
         {
             client.PlayerData.Parse(packet);
-            if (client.State.ACCID != null) return;
-
             State resolvedState = null;
+            State randomRealmState = null;
 
-            foreach (State cstate in _proxy.States.Values)
+            foreach (State cstate in _proxy.States.Values.ToList())
+            {
                 if (cstate.ACCID == client.PlayerData.AccountId)
+                {
                     resolvedState = cstate;
+                    randomRealmState = _proxy.States.Values.FirstOrDefault(x => x.LastHello != null && x.LastHello.GameId == -3);
+
+                    if (randomRealmState != null)
+                    {
+                        resolvedState.ConTargetAddress = randomRealmState.LastRealm.Host;
+                        resolvedState.LastRealm = randomRealmState.LastRealm;
+                        _proxy.States.Remove(randomRealmState.GUID);
+                    }
+                    else if (resolvedState.LastHello.GameId == -2 && ((MapInfoPacket)client.State["MapInfo"]).Name == "Nexus")
+                    {
+                        resolvedState.ConTargetAddress = Proxy.DefaultServer;
+                    }
+                }
+            }
 
             if (resolvedState == null)
+            {
                 client.State.ACCID = client.PlayerData.AccountId;
+            }
             else
             {
-                foreach (var pair in client.State.States)
+                foreach (var pair in client.State.States.ToList())
+                {
                     resolvedState[pair.Key] = pair.Value;
-                foreach (var pair in client.State.States)
+                }
+
+                foreach (var pair in client.State.States.ToList())
+                {
                     resolvedState[pair.Key] = pair.Value;
+                }
 
                 client.State = resolvedState;
             }
+
+
+            if (packet.NewObjs.Select(x => x.Status.ObjectId).Contains(client.PlayerData.OwnerObjectId))
+            {
+                _proxy.FireOnTouchDown(client);
+                client.State.RenderedEntities.Clear();
+            }
+            client.State.RenderedEntities.AddRange(packet.NewObjs.ToList());
+            client.State.RenderedEntities = client.State.RenderedEntities.Where(x => !packet.Drops.Contains(x.Status.ObjectId)).ToList();
         }
     }
 }

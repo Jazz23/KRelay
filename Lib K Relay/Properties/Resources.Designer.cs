@@ -19,7 +19,7 @@ namespace Lib_K_Relay.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -79,8 +79,9 @@ namespace Lib_K_Relay.Properties {
         ///      &lt;Size&gt;100&lt;/Size&gt;
         ///      &lt;MaxHitPoints&gt;900&lt;/MaxHitPoints&gt;
         ///      &lt;Defense&gt;7&lt;/Defense&gt;
-        ///      &lt;XpMult&gt;0.1&lt;/XpMult&gt;
-        ///      &lt;Projectile id=&quot;0&quot; [rest of string was truncated]&quot;;.
+        ///      &lt;Exp&gt;9&lt;/Exp&gt;
+        ///      &lt;Projectile id=&quot;0&quot;&gt;
+        ///       [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Objects {
             get {
@@ -90,31 +91,30 @@ namespace Lib_K_Relay.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Packets&gt;
-        ///&lt;Packet&gt;
-        ///	&lt;PacketName&gt;FAILURE&lt;/PacketName&gt;
-        ///	&lt;PacketID&gt;0&lt;/PacketID&gt;
-        ///&lt;/Packet&gt;
-        ///&lt;Packet&gt;
-        ///	&lt;PacketName&gt;CREATESUCCESS&lt;/PacketName&gt;
-        ///	&lt;PacketID&gt;86&lt;/PacketID&gt;
-        ///&lt;/Packet&gt;
-        ///&lt;Packet&gt;
-        ///	&lt;PacketName&gt;CREATE&lt;/PacketName&gt;
-        ///	&lt;PacketID&gt;90&lt;/PacketID&gt;
-        ///&lt;/Packet&gt;
-        ///&lt;Packet&gt;
-        ///	&lt;PacketName&gt;PLAYERSHOOT&lt;/PacketName&gt;
-        ///	&lt;PacketID&gt;16&lt;/PacketID&gt;
-        ///&lt;/Packet&gt;
-        ///&lt;Packet&gt;
-        ///	&lt;PacketName&gt;MOVE&lt;/PacketName&gt;
-        ///	&lt;PacketID&gt;14&lt;/PacketID&gt;
-        ///&lt;/Packet&gt;
-        ///&lt;Packet&gt;
-        ///	&lt;PacketName&gt;PLAYERTEXT&lt;/PacketName&gt;
-        ///	&lt;PacketID&gt;67&lt;/PacketID&gt;
-        ///&lt;/Packet&gt;
-        ///&lt; [rest of string was truncated]&quot;;.
+        ///	&lt;Packet&gt;
+        ///		&lt;PacketName&gt;FAILURE&lt;/PacketName&gt;
+        ///		&lt;PacketID&gt;0&lt;/PacketID&gt;
+        ///	&lt;/Packet&gt;
+        ///	&lt;Packet&gt;
+        ///		&lt;PacketName&gt;CREATESUCCESS&lt;/PacketName&gt;
+        ///		&lt;PacketID&gt;22&lt;/PacketID&gt;
+        ///	&lt;/Packet&gt;
+        ///	&lt;Packet&gt;
+        ///		&lt;PacketName&gt;CREATE&lt;/PacketName&gt;
+        ///		&lt;PacketID&gt;74&lt;/PacketID&gt;
+        ///	&lt;/Packet&gt;
+        ///	&lt;Packet&gt;
+        ///		&lt;PacketName&gt;PLAYERSHOOT&lt;/PacketName&gt;
+        ///		&lt;PacketID&gt;52&lt;/PacketID&gt;
+        ///	&lt;/Packet&gt;
+        ///	&lt;Packet&gt;
+        ///		&lt;PacketName&gt;MOVE&lt;/PacketName&gt;
+        ///		&lt;PacketID&gt;11&lt;/PacketID&gt;
+        ///	&lt;/Packet&gt;
+        ///	&lt;Packet&gt;
+        ///		&lt;PacketName&gt;PLAYERTEXT&lt;/PacketName&gt;
+        ///		&lt;PacketID&gt;37&lt;/PacketID&gt;
+        ///	&lt;/Pack [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Packets {
             get {

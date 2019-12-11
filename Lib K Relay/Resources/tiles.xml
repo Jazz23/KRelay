@@ -874,8 +874,8 @@
          <File>lofiEnvironment</File>
          <Index>0x70</Index>
       </Texture>
-      <MinDamage>30</MinDamage>
-      <MaxDamage>60</MaxDamage>
+      <MinDamage>45</MinDamage>
+      <MaxDamage>45</MaxDamage>
       <Animate dx=".33" dy=".33">Flow</Animate>
       <Sink/>
       <Speed>.666</Speed>
@@ -1309,8 +1309,8 @@
          <File>lofiEnvironment</File>
          <Index>0x70</Index>
       </Texture>
-      <MinDamage>30</MinDamage>
-      <MaxDamage>60</MaxDamage>
+      <MinDamage>45</MinDamage>
+      <MaxDamage>45</MaxDamage>
       <Animate dx=".33" dy=".33">Flow</Animate>
       <Sink/>
       <Speed>.666</Speed>
@@ -1845,8 +1845,8 @@
          <File>lofiEnvironment</File>
          <Index>0x71</Index>
       </Texture>
-      <MinDamage>25</MinDamage>
-      <MaxDamage>40</MaxDamage>
+      <MinDamage>32</MinDamage>
+      <MaxDamage>32</MaxDamage>
       <Animate dx=".33" dy=".33">Flow</Animate>
       <Sink/>
       <Speed>.666</Speed>
@@ -3093,8 +3093,8 @@
          <File>lofiEnvironment2</File>
          <Index>0x09</Index>
       </Texture>
-      <MinDamage>50</MinDamage>
-      <MaxDamage>60</MaxDamage>
+      <MinDamage>55</MinDamage>
+      <MaxDamage>55</MaxDamage>
       <Animate dx=".33" dy=".33">Flow</Animate>
       <Sink/>
       <Speed>.666</Speed>
@@ -3111,8 +3111,8 @@
          <File>lofiObj3</File>
          <Index>0x3fa</Index>
       </Texture>
-      <MinDamage>50</MinDamage>
-      <MaxDamage>60</MaxDamage>
+      <MinDamage>55</MinDamage>
+      <MaxDamage>55</MaxDamage>
       <BlendPriority>-3</BlendPriority>
       <Speed>1.2</Speed>
    </Ground>
@@ -3301,8 +3301,8 @@
          <File>lofiObj3</File>
          <Index>0x483</Index>
       </Texture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".33" dy=".33">Flow</Animate>
       <Sink/>
       <Speed>.777</Speed>
@@ -3312,8 +3312,8 @@
          <File>lofiObj3</File>
          <Index>0x447</Index>
       </Texture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -3628,8 +3628,8 @@
             <Index>0x364</Index>
          </Texture>
       </RandomTexture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
    </Ground>
    <Ground type="0x2596" id="lod Purple Tile">
       <DisplayId>Magma</DisplayId>
@@ -3655,8 +3655,8 @@
             <Index>0x361</Index>
          </Texture>
       </RandomTexture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
    </Ground>
    <Ground type="0x2597" id="lod Blue Tile">
       <DisplayId>Magma</DisplayId>
@@ -3682,8 +3682,8 @@
             <Index>0x36f</Index>
          </Texture>
       </RandomTexture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
    </Ground>
    <Ground type="0x2598" id="lod Green Tile">
       <DisplayId>Magma</DisplayId>
@@ -3709,8 +3709,8 @@
             <Index>0x36c</Index>
          </Texture>
       </RandomTexture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
    </Ground>
    <Ground type="0x2599" id="lod Cream Tile">
       <DisplayId>Magma</DisplayId>
@@ -3718,8 +3718,8 @@
          <File>lofiObj3</File>
          <Index>0x371</Index>
       </Texture>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
    </Ground>
    <Ground type="0x259a" id="DS Floor Tile">
       <Texture>
@@ -3962,6 +3962,512 @@
          <Index>0x1e</Index>
       </Texture>
       <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0xcff" id="SHNoWalkTile">
+      <RandomTexture>
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x12b</Index>
+         </Texture>
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x12c</Index>
+         </Texture>
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x12d</Index>
+         </Texture>
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x12e</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+
+
+<!-- alienInvasionGround -->
+
+
+   <Ground type="0xb274" id="AI Malogia Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x64</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb275" id="AI Malogia Background">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x65</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb276" id="AI Malogia Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x65</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb277" id="AI Untaris Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x69</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb278" id="AI Untaris Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6a</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb279" id="AI Untaris Ground Tarul">
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x99</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9a</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9b</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9c</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb27a" id="AI Untaris Tarul Mouth TL 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27b" id="AI Untaris Tarul Mouth TL 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x93</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27c" id="AI Untaris Tarul Mouth TL 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x96</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb286" id="AI Untaris Tarul Mouth T 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x91</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb287" id="AI Untaris Tarul Mouth T 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x94</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb288" id="AI Untaris Tarul Mouth T 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x97</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27d" id="AI Untaris Tarul Mouth TR 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27e" id="AI Untaris Tarul Mouth TR 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x95</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27f" id="AI Untaris Tarul Mouth TR 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x98</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb289" id="AI Untaris Tarul Mouth L 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa0</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28a" id="AI Untaris Tarul Mouth L 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28b" id="AI Untaris Tarul Mouth L 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa6</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28c" id="AI Untaris Tarul Mouth C 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa1</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28d" id="AI Untaris Tarul Mouth C 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28e" id="AI Untaris Tarul Mouth C 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa7</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28f" id="AI Untaris Tarul Mouth R 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa2</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb290" id="AI Untaris Tarul Mouth R 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb291" id="AI Untaris Tarul Mouth R 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa8</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb280" id="AI Untaris Tarul Mouth BL 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb281" id="AI Untaris Tarul Mouth BL 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb3</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb282" id="AI Untaris Tarul Mouth BL 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb6</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb292" id="AI Untaris Tarul Mouth B 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb1</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb293" id="AI Untaris Tarul Mouth B 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb294" id="AI Untaris Tarul Mouth B 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb7</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb283" id="AI Untaris Tarul Mouth BR 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb284" id="AI Untaris Tarul Mouth BR 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb285" id="AI Untaris Tarul Mouth BR 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb2a4" id="AI Untaris Background">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb295" id="AI Forax Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x66</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+   </Ground>
+   <Ground type="0xb296" id="AI Forax Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x73</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb297" id="AI Forax Water">
+      <DisplayId>Forax Acid River</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x74</Index>
+      </Texture>
+      <MinDamage>25</MinDamage>
+      <MaxDamage>25</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <Speed>.25</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb298" id="AI Forax Water Dark">
+      <DisplayId>Forax Acid River</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x75</Index>
+      </Texture>
+      <MinDamage>25</MinDamage>
+      <MaxDamage>25</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <NoWalk/>
+      <Speed>.25</Speed>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0xb2a3" id="AI Forax Background">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x66</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb299" id="AI Katalund Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb29a" id="AI Katalund Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x77</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb29b" id="AI Katalund Gas 1">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb29c" id="AI Katalund Gas 2">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x77</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb29d" id="AI Katalund Factory Ground">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x86</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb29f" id="AI Katalund Factory Treadmill Up">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x87</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dy="2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb2a0" id="AI Katalund Factory Treadmill Down">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x87</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dy="-2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb2a1" id="AI Katalund Factory Treadmill Left">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8b</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dx="2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb2a2" id="AI Katalund Factory Treadmill Right">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8b</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dx="-2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb29e" id="AI Katalund Background">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+      <NoWalk/>
    </Ground>
 
 
@@ -5027,6 +5533,339 @@
    </Ground>
 
 
+<!-- battleOryxGround -->
+
+
+
+
+
+<!-- cnidarianReefGround -->
+
+
+   <Ground type="0x9f1" id="CR Ground">
+      <RandomTexture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x03</Index>
+         </Texture>
+      </RandomTexture>
+      <Edge>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x69</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x6a</Index>
+         </Texture>
+      </Corner>
+      <InnerCorner>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x6b</Index>
+         </Texture>
+      </InnerCorner>
+      <Top>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x6c</Index>
+         </Texture>
+      </Top>
+      <TopAnimate dx=".2" dy=".2">Wave</TopAnimate>
+   </Ground>
+
+
+<!-- cursedLibraryGround -->
+
+
+   <Ground type="0xab56" id="Library Carpet Red">
+      <SameTypeEdgeMode/>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x08</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </Corner>
+      <InnerCorner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x09</Index>
+         </Texture>
+      </InnerCorner>
+   </Ground>
+   <Ground type="0xab57" id="Library Carpet Blue">
+      <SameTypeEdgeMode/>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0c</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0e</Index>
+         </Texture>
+      </Corner>
+      <InnerCorner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0d</Index>
+         </Texture>
+      </InnerCorner>
+   </Ground>
+   <Ground type="0xab58" id="Library Slabs Very Light">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x36</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab59" id="Library Slabs Light">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x36</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab5a" id="Library Slabs Dark">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab5b" id="Library Slabs Very Dark">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab5c" id="Library Tile Dark">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x36</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab5d" id="Library Bookshelf Top">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab5e" id="Library Bookshelf Top Warning">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x36</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab5f" id="Library Slabs Dark ST">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab60" id="Library Slabs Dark SL">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab61" id="Library Slabs Dark SB">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab62" id="Library Slabs Dark SR">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab63" id="Library Slabs Dark STL">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab64" id="Library Slabs Dark STR">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab65" id="Library Slabs Dark SBR">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x45</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab66" id="Library Slabs Dark SBL">
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x46</Index>
+      </Texture>
+   </Ground>
+
+
 <!-- epicHiveGround -->
 
 
@@ -5039,8 +5878,8 @@
       <Animate dx=".2" dy=".2">Flow</Animate>
       <Sinking/>
       <BlendPriority>3</BlendPriority>
-      <MinDamage>50</MinDamage>
-      <MaxDamage>70</MaxDamage>
+      <MinDamage>60</MinDamage>
+      <MaxDamage>60</MaxDamage>
       <DisplayId>Killer Honey</DisplayId>
    </Ground>
    <Ground type="0x1a9d" id="EH UnderPartialFloor Venom">
@@ -5072,8 +5911,8 @@
       <Animate dx=".2" dy=".2">Flow</Animate>
       <BlendPriority>9</BlendPriority>
       <Sink/>
-      <MinDamage>50</MinDamage>
-      <MaxDamage>70</MaxDamage>
+      <MinDamage>60</MinDamage>
+      <MaxDamage>60</MaxDamage>
       <DisplayId>Killer Honey</DisplayId>
    </Ground>
    <Ground type="0x10ce" id="EH Unwalkable Venom">
@@ -5083,9 +5922,9 @@
       </Texture>
       <BlendPriority>4</BlendPriority>
       <NoWalk/>
-      <MinDamage>80</MinDamage>
-      <MaxDamage>120</MaxDamage>
-      <DisplayId>Killer Honey</DisplayId>
+      <MinDamage>100</MinDamage>
+      <MaxDamage>100</MaxDamage>
+      <DisplayId>Deep Killer Honey</DisplayId>
    </Ground>
    <Ground type="0x1aa1" id="EH Secret Floor">
       <Texture>
@@ -5209,6 +6048,27 @@
          <Index>0x01</Index>
       </Texture>
       <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xc002" id="EH Teleporter Floor">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x6e</Index>
+      </Texture>
+      <BlendPriority>8</BlendPriority>
+   </Ground>
+   <Ground type="0xc003" id="EH Teleporter Floor 2">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x6f</Index>
+      </Texture>
+      <BlendPriority>8</BlendPriority>
+   </Ground>
+   <Ground type="0xc004" id="EH Teleporter Floor 3">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x70</Index>
+      </Texture>
+      <BlendPriority>8</BlendPriority>
    </Ground>
 
 
@@ -5782,6 +6642,2234 @@
    </Ground>
 
 
+<!-- iceCaveGround -->
+
+
+   <Ground type="0xaade" id="Ice Slide Dark">
+      <RandomTexture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x140</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x141</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x142</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x143</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x144</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x146</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x147</Index>
+         </Texture>
+      </RandomTexture>
+      <SlideAmount>0.95</SlideAmount>
+      <BlendPriority>16</BlendPriority>
+      <Speed>1</Speed>
+   </Ground>
+   <Ground type="0xaae0" id="Ice Slide Dark Safe">
+      <RandomTexture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x140</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x141</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x142</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x143</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x144</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x146</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x147</Index>
+         </Texture>
+      </RandomTexture>
+      <SlideAmount>0.95</SlideAmount>
+      <BlendPriority>16</BlendPriority>
+      <Speed>1</Speed>
+   </Ground>
+   <Ground type="0x136a" id="Tear Frost">
+      <DisplayId>Tearing Frost</DisplayId>
+      <MinDamage>60</MinDamage>
+      <MaxDamage>60</MaxDamage>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x15c</Index>
+      </Texture>
+      <SlideAmount>0.95</SlideAmount>
+      <BlendPriority>14</BlendPriority>
+      <Speed>1</Speed>
+   </Ground>
+
+
+<!-- lairOfDraconisGround -->
+
+
+   <Ground type="0xb16e" id="LOD Black Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb16f" id="LOD Blue Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x26</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x26</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x27</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x27</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x28</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb170" id="LOD Green Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x29</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x29</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2a</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2a</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2b</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb171" id="LOD Red Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2e</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb172" id="LOD Gold Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x2f</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x30</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x31</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x32</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb173" id="LOD White Tile">
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb174" id="LOD White Tile Dark">
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb175" id="LOD Water">
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <XOffset>.0625</XOffset>
+      <YOffset>.0625</YOffset>
+      <Speed>0.55</Speed>
+      <BlendPriority>2</BlendPriority>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+   </Ground>
+   <Ground type="0xb176" id="LOD Mud">
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x60</Index>
+      </Texture>
+      <XOffset>.0625</XOffset>
+      <YOffset>.0625</YOffset>
+      <Speed>0.35</Speed>
+      <BlendPriority>1</BlendPriority>
+      <Animate dx=".1" dy=".1">Flow</Animate>
+      <Sink/>
+   </Ground>
+   <Ground type="0xb177" id="LOD Really Hot Water">
+      <DisplayId>Scorching Water</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <XOffset>.0625</XOffset>
+      <YOffset>.0625</YOffset>
+      <Speed>0.7</Speed>
+      <BlendPriority>1</BlendPriority>
+      <MinDamage>20</MinDamage>
+      <MaxDamage>20</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+   </Ground>
+   <Ground type="0xb178" id="LOD Not Petrol 1">
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <BlendPriority>1</BlendPriority>
+      <SlideAmount>0.999</SlideAmount>
+   </Ground>
+   <Ground type="0xb179" id="LOD Icey Ice">
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc0</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc1</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc2</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc3</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc4</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc5</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xc7</Index>
+         </Texture>
+      </RandomTexture>
+      <SlideAmount>0.95</SlideAmount>
+      <BlendPriority>1</BlendPriority>
+      <Speed>1</Speed>
+   </Ground>
+   <Ground type="0xb17a" id="LOD Ashes">
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Speed>0.65</Speed>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb17b" id="LOD Miasma Black">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x70</Index>
+         </Texture>
+      </Top>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <TopAnimate dx=".1" dy=".1">Wave</TopAnimate>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb17c" id="LOD Miasma Black Right">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x71</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb17d" id="LOD Miasma Black Down">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x72</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb17e" id="LOD Miasma Black Left">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x73</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb17f" id="LOD Miasma Black Up">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x74</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb180" id="LOD Miasma Black TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x75</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb181" id="LOD Miasma Black BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x76</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb182" id="LOD Miasma Black BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x77</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb183" id="LOD Miasma Black TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb16c" id="LOD Miasma Black Inner BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x79</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb16b" id="LOD Miasma Black Inner BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x7a</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb16a" id="LOD Miasma Black Inner TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb169" id="LOD Miasma Black Inner TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x7c</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb184" id="LOD Miasma Blue">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x80</Index>
+         </Texture>
+      </Top>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <TopAnimate dx=".1" dy=".1">Wave</TopAnimate>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb185" id="LOD Miasma Blue Right">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x81</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb186" id="LOD Miasma Blue Down">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x82</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb187" id="LOD Miasma Blue Left">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x83</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb188" id="LOD Miasma Blue Up">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x84</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb189" id="LOD Miasma Blue TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x85</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb18a" id="LOD Miasma Blue BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x86</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb18b" id="LOD Miasma Blue BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x87</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb18c" id="LOD Miasma Blue TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x88</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb168" id="LOD Miasma Blue Inner BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x89</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb167" id="LOD Miasma Blue Inner BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x8a</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb166" id="LOD Miasma Blue Inner TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x8b</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb165" id="LOD Miasma Blue Inner TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x8c</Index>
+         </Texture>
+      </Top>
+      <Color>0x001586</Color>
+   </Ground>
+   <Ground type="0xb18d" id="LOD Miasma Red">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x90</Index>
+         </Texture>
+      </Top>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <TopAnimate dx=".1" dy=".1">Wave</TopAnimate>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb18e" id="LOD Miasma Red Right">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x91</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb18f" id="LOD Miasma Red Down">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x92</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb190" id="LOD Miasma Red Left">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x93</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb191" id="LOD Miasma Red Up">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x94</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb192" id="LOD Miasma Red TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x95</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb193" id="LOD Miasma Red BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x96</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb194" id="LOD Miasma Red BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x97</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb195" id="LOD Miasma Red TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x98</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb164" id="LOD Miasma Red Inner BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x99</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb163" id="LOD Miasma Red Inner BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x9a</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb162" id="LOD Miasma Red Inner TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x9b</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb161" id="LOD Miasma Red Inner TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x9c</Index>
+         </Texture>
+      </Top>
+      <Color>0x900000</Color>
+   </Ground>
+   <Ground type="0xb196" id="LOD Miasma Green">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa0</Index>
+         </Texture>
+      </Top>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <TopAnimate dx=".1" dy=".1">Wave</TopAnimate>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb197" id="LOD Miasma Green Left">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa1</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb198" id="LOD Miasma Green Up">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa2</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb199" id="LOD Miasma Green Right">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa3</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb19a" id="LOD Miasma Green Down">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa4</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb19b" id="LOD Miasma Green TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa5</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb19c" id="LOD Miasma Green BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa6</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb19d" id="LOD Miasma Green BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa7</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb19e" id="LOD Miasma Green TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa8</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb160" id="LOD Miasma Green Inner BR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xa9</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb15f" id="LOD Miasma Green Inner BL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xaa</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb15e" id="LOD Miasma Green Inner TL">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xab</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb15d" id="LOD Miasma Green Inner TR">
+      <DisplayId>Miasma</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xac</Index>
+         </Texture>
+      </Top>
+      <Color>0x0C3B00</Color>
+   </Ground>
+   <Ground type="0xb1ab" id="LOD Miasma Ivory">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x70</Index>
+         </Texture>
+      </Top>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <TopAnimate dx=".1" dy=".1">Wave</TopAnimate>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1ac" id="LOD Miasma Ivory Dark">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x70</Index>
+         </Texture>
+      </Top>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <TopAnimate dx=".1" dy=".1">Wave</TopAnimate>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb19f" id="LOD Miasma Ivory Right">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x71</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a0" id="LOD Miasma Ivory Down">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x72</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a1" id="LOD Miasma Ivory Left">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x73</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a2" id="LOD Miasma Ivory Up">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x74</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a3" id="LOD Miasma Ivory Right Light">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x71</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a4" id="LOD Miasma Ivory Down Light">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x72</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a5" id="LOD Miasma Ivory Left Light">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x73</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a6" id="LOD Miasma Ivory Up Light">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x74</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a7" id="LOD Miasma Ivory Inner BR">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x79</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a8" id="LOD Miasma Ivory Inner BL">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x7a</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1a9" id="LOD Miasma Ivory Inner TL">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+   <Ground type="0xb1aa" id="LOD Miasma Ivory Inner TR">
+      <DisplayId>Miasma</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x7c</Index>
+         </Texture>
+      </Top>
+      <Color>0x2A0093</Color>
+   </Ground>
+
+
 <!-- lostHallsGround -->
 
 
@@ -5789,77 +8877,141 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ce</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cf</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1da</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1db</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dd</Index>
          </Texture>
       </RandomTexture>
    </Ground>
    <Ground type="0xb01b" id="LH Main Tile Bloody">
-      <Texture>
-         <File>lostHallsObjects8x8</File>
-         <Index>1</Index>
-      </Texture>
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x199</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19a</Index>
+         </Texture>
+      </RandomTexture>
    </Ground>
    <Ground type="0xb01c" id="LH Gem Tile">
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>3</Index>
+            <Index>0x03</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>4</Index>
+            <Index>0x04</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>5</Index>
+            <Index>0x05</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>6</Index>
+            <Index>0x06</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>7</Index>
+            <Index>0x07</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>8</Index>
+            <Index>0x08</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>9</Index>
+            <Index>0x09</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>10</Index>
+            <Index>0x0a</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>11</Index>
+            <Index>0x0b</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>12</Index>
+            <Index>0x0c</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>13</Index>
+            <Index>0x0d</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>14</Index>
+            <Index>0x0e</Index>
          </Texture>
       </RandomTexture>
    </Ground>
    <Ground type="0xb01d" id="LH Hall Tile">
-      <Texture>
-         <File>lostHallsObjects8x8</File>
-         <Index>15</Index>
-      </Texture>
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0f</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19b</Index>
+         </Texture>
+      </RandomTexture>
    </Ground>
    <Ground type="0xb025" id="LH Cult Main Tile">
       <Texture>
@@ -5868,6 +9020,7 @@
       </Texture>
    </Ground>
    <Ground type="0xb027" id="LH Cult Bloody Tile">
+      <Color>0x361F11</Color>
       <Texture>
          <File>lostHallsObjects8x8</File>
          <Index>0x2a</Index>
@@ -5879,8 +9032,8 @@
          <Index>0x447</Index>
       </Texture>
       <DisplayId>Pure Evil</DisplayId>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -5893,8 +9046,8 @@
          <Index>0x447</Index>
       </Texture>
       <DisplayId>Pure Evil</DisplayId>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -5907,8 +9060,8 @@
          <Index>0x447</Index>
       </Texture>
       <DisplayId>Pure Evil</DisplayId>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -5921,8 +9074,8 @@
          <Index>0x447</Index>
       </Texture>
       <DisplayId>Pure Evil</DisplayId>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -5935,8 +9088,8 @@
          <Index>0x447</Index>
       </Texture>
       <DisplayId>Pure Evil</DisplayId>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -5949,8 +9102,36 @@
          <Index>0x447</Index>
       </Texture>
       <DisplayId>Pure Evil</DisplayId>
-      <MinDamage>70</MinDamage>
-      <MaxDamage>80</MaxDamage>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb04a" id="LH Void Pure Evil Deep">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>90</MinDamage>
+      <MaxDamage>90</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb04b" id="LH Void Pure Evil Depths">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>115</MinDamage>
+      <MaxDamage>115</MaxDamage>
       <Animate dx=".35">Flow</Animate>
       <Sink/>
       <RandomOffset/>
@@ -5961,11 +9142,63 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ce</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cf</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1da</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1db</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dd</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -5973,11 +9206,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -5985,11 +9218,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -5997,11 +9230,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -6009,11 +9242,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -6027,11 +9260,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -6039,11 +9272,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -6051,11 +9284,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -6063,11 +9296,11 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0</Index>
+            <Index>0x00</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>2</Index>
+            <Index>0x01</Index>
          </Texture>
       </RandomTexture>
    </Ground>
@@ -6075,62 +9308,70 @@
       <RandomTexture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1ba</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1bb</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1bc</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1bd</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1ba</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1bb</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc6</Index>
+            <Index>0x1bc</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc7</Index>
+            <Index>0x1bd</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc8</Index>
+            <Index>0x1ba</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xc9</Index>
+            <Index>0x1bb</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xca</Index>
+            <Index>0x1bc</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xcb</Index>
+            <Index>0x1bd</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xca</Index>
+            <Index>0x1c0</Index>
          </Texture>
          <Texture>
             <File>lostHallsObjects8x8</File>
-            <Index>0xcb</Index>
+            <Index>0x1c1</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1c2</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1c3</Index>
          </Texture>
       </RandomTexture>
-      <BlendPriority>1</BlendPriority>
+      <BlendPriority>3</BlendPriority>
    </Ground>
    <Ground type="0xb036" id="LH Hall Tile NoWalk">
       <Texture>
@@ -6138,7 +9379,357 @@
          <Index>0x0f</Index>
       </Texture>
       <NoWalk/>
-      <Speed>0</Speed>
+   </Ground>
+   <Ground type="0xb037" id="LH Water Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x198</Index>
+      </Texture>
+      <Animate dx=".5" dy=".5">Flow</Animate>
+      <BlendPriority>1</BlendPriority>
+      <Sink/>
+      <Speed>.5</Speed>
+   </Ground>
+   <Ground type="0xb038" id="LH Ice Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x197</Index>
+      </Texture>
+      <Speed>1</Speed>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0xb01e" id="LH Hole Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x196</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb039" id="LH Hall Tile Bloody">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19c</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19d</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb03a" id="LH Main Tile UL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x193</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03b" id="LH Main Tile U">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x194</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03c" id="LH Main Tile UR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x195</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03d" id="LH Main Tile L">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a3</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03e" id="LH Main Tile R">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a5</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03f" id="LH Main Tile BL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b3</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb040" id="LH Main Tile B">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b4</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb041" id="LH Main Tile BR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b5</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb01f" id="LH Hole Tile UL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x190</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb020" id="LH Hole Tile U">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x191</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb021" id="LH Hole Tile UR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x192</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb022" id="LH Hole Tile L">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a0</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb023" id="LH Hole Tile C">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a1</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb024" id="LH Hole Tile R">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a2</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb026" id="LH Hole Tile BL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b0</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb028" id="LH Hole Tile B">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b1</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb029" id="LH Hole Tile BR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b2</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb02a" id="LH Hole Edge Tile UL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x19e</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb02b" id="LH Hole Edge Tile U">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x19f</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb047" id="LH Hole Edge Tile UR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a6</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb042" id="LH Hole Edge Tile L">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a7</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb043" id="LH Hole Edge Tile R">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a8</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb044" id="LH Hole Edge Tile BL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a9</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb045" id="LH Hole Edge Tile B">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1aa</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb046" id="LH Hole Edge Tile BR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1ab</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb048" id="LH Cult Top Tile H">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1b6</Index>
+         </Texture>
+      </Top>
+   </Ground>
+   <Ground type="0xb049" id="LH Cult Top Tile V">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1b7</Index>
+         </Texture>
+      </Top>
+   </Ground>
+
+
+<!-- magicWoodsGround -->
+
+
+   <Ground type="0x850" id="Magic Woods Grass">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x851" id="Magic Woods White Flower Grass">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x852" id="Magic Woods Red Flower Grass">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x853" id="Magic Woods Yellow Flower Grass">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x854" id="Magic Woods Water">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Sink/>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <BlendPriority>1</BlendPriority>
+      <Speed>0.7</Speed>
+   </Ground>
+   <Ground type="0x855" id="Magic Woods Dirt Unwalkable">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0x856" id="Magic Woods Dirt">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+   </Ground>
+   <Ground type="0x85b" id="Magic Woods Dirt Wall">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0x857" id="Magic Woods Boss Water">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Sink/>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <BlendPriority>2</BlendPriority>
+      <Speed>0.7</Speed>
+   </Ground>
+   <Ground type="0x858" id="Enchanted Fountain Water">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Sink/>
+      <MinDamage>35</MinDamage>
+      <MaxDamage>35</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <BlendPriority>1</BlendPriority>
+      <Speed>0.7</Speed>
+      <DisplayId>Enchanted Fountain Water</DisplayId>
+   </Ground>
+   <Ground type="0x859" id="Enchanted Fountain Water Center">
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Sink/>
+      <MinDamage>35</MinDamage>
+      <MaxDamage>35</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <BlendPriority>1</BlendPriority>
+      <Speed>0.7</Speed>
+      <DisplayId>Enchanted Fountain Water</DisplayId>
+   </Ground>
+   <Ground id="Fairy Fountain Stone" type="0x85a">
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x3e</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x3e</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x3f</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>2</BlendPriority>
    </Ground>
 
 
@@ -6512,8 +10103,8 @@
          <File>oryxHordeObjects8x8</File>
          <Index>0x1a</Index>
       </Texture>
-      <MinDamage>30</MinDamage>
-      <MaxDamage>60</MaxDamage>
+      <MinDamage>45</MinDamage>
+      <MaxDamage>45</MaxDamage>
       <Animate dx=".33" dy=".33">Flow</Animate>
       <Sink/>
       <Speed>.666</Speed>
@@ -6689,6 +10280,158 @@
          <Index>0x05</Index>
       </Texture>
       <BlendPriority>6</BlendPriority>
+   </Ground>
+
+
+<!-- secludedThicketGround -->
+
+
+   <Ground type="0x519" id="SpiderDirt Unwalkable">
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x23</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x25</Index>
+         </Texture>
+      </Corner>
+      <RandomOffset/>
+      <NoWalk/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0x51a" id="Spider Dirt Hole Unwalkable">
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x02</Index>
+      </Texture>
+      <NoWalk/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0x51b" id="Jungle Temple Floor TL">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51c" id="Jungle Temple Floor TR">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51d" id="Jungle Temple Floor BR">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51e" id="Jungle Temple Floor BL">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51f" id="ST Evil Water">
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x09</Index>
+      </Texture>
+      <DisplayId>Evil Rainwater</DisplayId>
+      <MinDamage>55</MinDamage>
+      <MaxDamage>55</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <BlendPriority>5</BlendPriority>
+      <Sink/>
+      <Speed>.67</Speed>
+   </Ground>
+   <Ground type="0x520" id="Jungle Temple Floor Gold 1">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x521" id="Jungle Temple Floor Gold 2">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x522" id="Jungle Temple Floor Gold 3">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x523" id="Jungle Temple Floor Gold Blue">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x524" id="Jungle Temple Floor Gold Green">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x525" id="Jungle Temple Floor Red 1">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x526" id="Jungle Temple Floor Red 2">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x527" id="Jungle Temple Floor Red 3">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x528" id="Jungle Temple Floor Red Blue">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x529" id="Jungle Temple Floor Red Green">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x52a" id="Jungle Temple Floor Red Red">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
    </Ground>
 
 
@@ -15486,6 +19229,960 @@
          <Index>0x832</Index>
       </Texture>
       <Speed>1.4</Speed>
+   </Ground>
+
+
+<!-- theMachineGround -->
+
+
+   <Ground type="0xabd0" id="Machine Bright 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd1" id="Machine Bright 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd2" id="Machine Bright 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd3" id="Machine Bright 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd4" id="Machine Bright 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd5" id="Machine Bright 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd6" id="Machine Bright 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd7" id="Machine Bright 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd8" id="Machine Bright 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd9" id="Machine Bright 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabda" id="Machine Mid 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdb" id="Machine Mid 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdc" id="Machine Mid 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdd" id="Machine Mid 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabde" id="Machine Mid 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdf" id="Machine Mid 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe0" id="Machine Mid 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe1" id="Machine Mid 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe2" id="Machine Mid 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe3" id="Machine Mid 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe4" id="Machine Dim 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe5" id="Machine Dim 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe6" id="Machine Dim 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe7" id="Machine Dim 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe8" id="Machine Dim 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe9" id="Machine Dim 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x50</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabea" id="Machine Dim 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x51</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabeb" id="Machine Dim 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabec" id="Machine Dim 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x53</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabed" id="Machine Dim 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabee" id="Machine Server Tile">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabef" id="Machine Surge Server Tile">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf0" id="Machine Surge Bright 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf1" id="Machine Surge Bright 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf2" id="Machine Surge Bright 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf3" id="Machine Surge Bright 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf4" id="Machine Surge Bright 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf5" id="Machine Surge Bright 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf6" id="Machine Surge Bright 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf7" id="Machine Surge Bright 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf8" id="Machine Surge Bright 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf9" id="Machine Surge Bright 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfa" id="Machine Surge Mid 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfb" id="Machine Surge Mid 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfc" id="Machine Surge Mid 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfd" id="Machine Surge Mid 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfe" id="Machine Surge Mid 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabff" id="Machine Surge Mid 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac00" id="Machine Surge Mid 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac01" id="Machine Surge Mid 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac02" id="Machine Surge Mid 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac03" id="Machine Surge Mid 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac04" id="Machine Surge Dim 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x45</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac05" id="Machine Surge Dim 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x46</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac06" id="Machine Surge Dim 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac07" id="Machine Surge Dim 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac08" id="Machine Surge Dim 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac09" id="Machine Surge Dim 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x55</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0a" id="Machine Surge Dim 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0b" id="Machine Surge Dim 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0c" id="Machine Surge Dim 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0d" id="Machine Surge Dim 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x59</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0e" id="Exposed Code">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x60</Index>
+      </Texture>
+      <Animate dx="2">Flow</Animate>
+      <MinDamage>50</MinDamage>
+      <MaxDamage>50</MaxDamage>
+      <Sink/>
+      <Speed>1.2</Speed>
+   </Ground>
+
+
+<!-- xmasNexusGround -->
+
+
+   <Ground type="0x10fb" id="XN Finish Line">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <SlideAmount>0.95</SlideAmount>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10fc" id="XN MTrailNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10fd" id="XN MTrailNL">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10fe" id="XN MTrailNR">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10ff" id="XN MTrailNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1100" id="XN MTrailEU">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1101" id="XN MTrailED">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1102" id="XN MTrailSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1103" id="XN MTrailSR">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1104" id="XN MTrailSL">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1105" id="XN MTrailSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1106" id="XN MTrailWD">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1107" id="XN MTrailWU">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1108" id="XN MTrailE Loop">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1109" id="XN MTrail SW Loop">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110a" id="XN ChTrailNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110b" id="XN ChTrailN">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110c" id="XN ChTrailNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110d" id="XN ChTrailW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110e" id="XN ChTrailE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110f" id="XN ChTrailSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1110" id="XN ChTrailS">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1111" id="XN ChTrailSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1112" id="XN HTrailS01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1113" id="XN HTrailS02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1114" id="XN HTrailS03">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1115" id="XN HTrailT11">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1116" id="XN HTrailT21">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1117" id="XN HTrailS22">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1118" id="XN HTrailS31">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1119" id="XN HTrailS32">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111a" id="XN MooseTrail01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111b" id="XN MooseTrail02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x41</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111c" id="XN BearTrail01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111d" id="XN BearTrail02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111e" id="XN IceShoreNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x111f" id="XN IceShoreN">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x45</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1120" id="XN IceShoreNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x46</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1121" id="XN IceShoreW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1122" id="XN IceShoreE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1123" id="XN IceShoreSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1124" id="XN IceShoreS">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1125" id="XN IceShoreSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1126" id="XN IceLake Island01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1127" id="XN IceLake Island02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1128" id="XN IceLake Island03">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1129" id="XN IceLake Island04">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112a" id="XN StreamNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x50</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112b" id="XN StreamN">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x51</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112c" id="XN StreamNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112d" id="XN StreamW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x53</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112e" id="XN StreamE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x54</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112f" id="XN StreamSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x55</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1130" id="XN StreamS">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1131" id="XN StreamSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1132" id="XN IceStick">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1133" id="XN IceLeaves01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x59</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1134" id="XN IceLeaf">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1135" id="XN IceLeaves02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1136" id="XN Nexus Speedy">
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Speed>1.4</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1137" id="XN Ice Speedy">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+      <Speed>1.2</Speed>
+   </Ground>
+   <Ground type="0x113f" id="XN Shallow Water">
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Sink/>
+      <Animate dx="0" dy="0.3">Wave</Animate>
+      <Speed>0.7</Speed>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0x1140" id="XN Deep Water">
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <NoWalk/>
+      <Animate dx="0" dy="0.3">Wave</Animate>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x1138" id="XN Dark Wood NoWalk">
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <NoWalk/>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1139" id="XN Snow NoWalk">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x1c0</Index>
+      </Texture>
+      <NoWalk/>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x113a" id="XN ICLight">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x81</Index>
+      </Texture>
+      <Sink/>
+      <Speed>0.7</Speed>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0x113b" id="XN ICDark">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Sink/>
+      <NoWalk/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0x113c" id="XN Snowy Rock">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x113d" id="XN Snow Dark">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <BlendPriority>4</BlendPriority>
+      <Speed>0.95</Speed>
+   </Ground>
+   <Ground type="0x113e" id="XN Snow Darkest">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <BlendPriority>4</BlendPriority>
+      <Speed>0.95</Speed>
    </Ground>
 
 </GroundTypes>
